@@ -28,7 +28,7 @@ Raw CSV -> Ingest -> QA/QC -> KPI calculation -> Plotly-Dash dashboard
 | Emissions intensity (CO2 / GDP) | Proxy for transition risk per unit of economic output |
 | YoY % change | Year-over-year emissions trend per entity |
 | Portfolio total CO₂ | Aggregate CO₂ across the whole portfolio tracked over time |
-| Data completeness score | Share of non-null fields per entity — flags entities with weaker disclosure |
+| Data completeness score | Share of non-null fields per entity; flags incomplete records |
 
 ## QA/QC checks
 
