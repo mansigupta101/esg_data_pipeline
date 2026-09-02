@@ -1,4 +1,4 @@
-# ESG Portfolio CO<sub>2</sub> Emissions Pipeline
+# ESG Portfolio CO<sub>2</sub> Emissions Data Pipeline
 
 A small ETL pipeline that ingests emissions data, runs QA/QC, computes ESG KPIs, and serves them through a dashboard. Built as a scoped demo of ESG data pipeline used in risk reporting functions (ingestion → validation → KPI computation → reporting).
 
