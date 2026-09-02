@@ -1,23 +1,15 @@
 # ESG Portfolio Emissions Pipeline
 
-A small ETL pipeline that ingests emissions data, runs QA/QC, computes
-ESG KPIs, and serves them through a dashboard. Built as a scoped demo
-of the kind of ESG data value chain used in bank risk/reporting functions
-(ingestion → validation → KPI computation → reporting).
+A small ETL pipeline that ingests emissions data, runs QA/QC, computes ESG KPIs, and serves them through a dashboard. Built as a scoped demo of ESG data pipeline used in risk reporting functions (ingestion → validation → KPI computation → reporting).
 
 ## Data
 
-[Our World in Data CO2 & GHG dataset](https://github.com/owid/co2-data)
-(public, no auth required). Ten countries (Norway, Sweden, Denmark,
-Germany, UK, US, China, India, Brazil, Netherlands) are used as a
-stand-in for the companies a bank might hold in its lending/investment
-portfolio — public corporate-level emissions data isn't freely
-available, so country-level data plays the same structural role.
+[Our World in Data CO2 & GHG dataset](https://github.com/owid/co2-data) (public, no auth required). Ten countries (Norway, Sweden, Denmark, Germany, UK, US, China, India, Brazil, Netherlands) are used as a stand-in for the companies a bank might hold in its lending/investment portfolio — public corporate-level emissions data isn't freely available, so country-level data plays the same structural role.
 
 ## Architecture
 
 ```
-Raw CSV --> Ingest --> QA/QC --> KPI calculation --> Plotly-Dash dashboard
+Raw CSV -> Ingest -> QA/QC -> KPI calculation -> Plotly-Dash dashboard
 ```
 
 - `src/ingest.py` — downloads (if needed) and loads raw data, filters to the tracked portfolio and year range
