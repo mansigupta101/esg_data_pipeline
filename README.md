@@ -29,6 +29,7 @@ Raw CSV -> Ingest -> QA/QC -> KPI calculation -> Plotly-Dash dashboard
 | YoY % change | Year-over-year emissions trend per entity |
 | Portfolio total CO₂ | Aggregate CO₂ across the whole portfolio tracked over time |
 | Data completeness score | Share of non-null fields per entity; flags incomplete records |
+| Data validity score |Share of records per entity that pass all defined QA/QC checks (schema, range, and YoY consistency); flags invalid data even when fields are complete|
 
 ## QA/QC checks
 
@@ -57,3 +58,6 @@ After running the pipeline at least once (so the KPI files exist), start the das
 bash
 ```python dashboard/app.py```
 Then open http://127.0.0.1:8050 in your browser.
+
+<img width="2534" height="1281" alt="Emissions_Dashboard_03-09-2026" src="https://github.com/user-attachments/assets/2271137e-60c3-4d08-8942-8d519c083ddc" />
+
